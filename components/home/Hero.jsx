@@ -45,7 +45,7 @@ const Hero = ({ comp }) => {
                   Transform Your Business with Lapaas
                 </div>
               </h1>
-              <p className="space-y-2 text-base tracking-wider text-left md:text-lg">
+              <p className="space-y-2 text-base tracking-wider text-left md:text-xl">
                 We pride ourselves on being able to provide high quality work at
                 affordable prices without sacrificing any quality. If you want a
                 digital marketing agency that truly cares about your success
