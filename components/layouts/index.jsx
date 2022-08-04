@@ -31,12 +31,12 @@ const DefaultLayout = ({ children }) => {
       >
         <motion.div
           animate={{
-            opacity: [0, 1, 0, 0],
+            opacity: [0, 1, 1, 0],
           }}
           transition={{
             ease: "easeInOut",
             duration: 1,
-            // repeatDelay: 3,
+            repeatDelay: 2,
             repeat: 100,
           }}
         >
@@ -57,12 +57,12 @@ const DefaultLayout = ({ children }) => {
         </motion.div>
         <motion.div
           animate={{
-            opacity: [1, 1, 0, 1],
+            opacity: [1, 0, 0, 1],
           }}
           transition={{
             ease: "easeInOut",
             duration: 1,
-            // repeatDelay: 3,
+            repeatDelay: 2,
             repeat: 100,
           }}
         >
