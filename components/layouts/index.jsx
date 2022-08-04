@@ -82,9 +82,9 @@ const DefaultLayout = ({ children }) => {
             <div
               style={{
                 backgroundImage: `url(${Taare.src})`,
-                backgroundPosition: "10% 10%",
+                backgroundPosition: "0% 10%",
               }}
-              id="customAnimatedBackground"
+              id="customAnimatedBackground2"
             ></div>
           </div>
         </motion.div>

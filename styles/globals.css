@@ -138,12 +138,30 @@ body {
   animation: animatedBackground 70s linear infinite alternate;
 }
 
+#customAnimatedBackground2 {
+  background-position: 0px 0px;
+  background-repeat: repeat-x;
+  width: 100%;
+  height: 100%;
+  -webkit-animation: animatedBackground2 70s linear infinite alternate;
+  animation: animatedBackground2 70s linear infinite alternate;
+}
+
 @keyframes animatedBackground {
   from {
     background-position: 0 0;
   }
   to {
     background-position: 1000% 0;
+  }
+}
+
+@keyframes animatedBackground2 {
+  from {
+    background-position: 0 10%;
+  }
+  to {
+    background-position: 1000% 10%;
   }
 }
 
