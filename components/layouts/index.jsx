@@ -38,7 +38,7 @@ const DefaultLayout = ({ children }) => {
           }}
           transition={{
             ease: "easeInOut",
-            duration: 2,
+            duration: 5,
             repeatDelay: 2,
             repeat: 100,
           }}
@@ -67,7 +67,7 @@ const DefaultLayout = ({ children }) => {
           }}
           transition={{
             ease: "easeInOut",
-            duration: 2,
+            duration: 5,
             repeatDelay: 2,
             repeat: 100,
           }}
