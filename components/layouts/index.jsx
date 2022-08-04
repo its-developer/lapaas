@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Header from "./Header";
 import Taare from "../../public/imgs/taare.png";
-import Taare2 from "../../public/imgs/taare2.png";
+import Taare1 from "../../public/imgs/taare1.png";
 import NavigationMenu from "./NavigationMenu";
 import { useRouter } from "next/router";
 import { motion } from "framer-motion";
@@ -31,15 +31,20 @@ const DefaultLayout = ({ children }) => {
       >
         <motion.div
           animate={{
-            opacity: [0, 1, 0],
+            opacity: [0, 1, 0, 0],
           }}
-          transition={{ ease: "easeInOut", duration: 10, repeat: 20 }}
+          transition={{
+            ease: "easeInOut",
+            duration: 1,
+            // repeatDelay: 3,
+            repeat: 100,
+          }}
         >
           <div
             style={{
               position: "absolute",
-              width: "150%",
-              height: "150%",
+              width: "100%",
+              height: "100%",
             }}
           >
             <div
@@ -52,9 +57,14 @@ const DefaultLayout = ({ children }) => {
         </motion.div>
         <motion.div
           animate={{
-            opacity: [1, 0, 1],
+            opacity: [1, 1, 0, 1],
           }}
-          transition={{ ease: "easeInOut", duration: 10, repeat: 20 }}
+          transition={{
+            ease: "easeInOut",
+            duration: 1,
+            // repeatDelay: 3,
+            repeat: 100,
+          }}
         >
           <div
             style={{
