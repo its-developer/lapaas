@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Header from "./Header";
-import Taare from "../../public/imgs/taare.png";
+import Taare from "../../public/imgs/taare1.png";
+import Taare2 from "../../public/imgs/taare2.png";
 import NavigationMenu from "./NavigationMenu";
 import { useRouter } from "next/router";
 import { motion } from "framer-motion";
@@ -28,27 +29,48 @@ const DefaultLayout = ({ children }) => {
           height: "100%",
         }}
       >
-        <div
-          style={{
-            // background: "red",
-            position: "absolute",
-            width: "150%",
-            height: "150%",
+        <motion.div
+          animate={{
+            opacity: [0, 1, 0],
           }}
+          transition={{ ease: "easeInOut", duration: 4, repeat: 20 }}
         >
           <div
             style={{
-              backgroundImage: `url(${Taare.src})`,
+              position: "absolute",
+              width: "150%",
+              height: "150%",
             }}
-            id="customAnimatedBackground"
-            // animate={{
-            //   y: [10, -10, 10],
-            // }}
-            // transition={{ ease: "easeInOut", duration: 2, repeat: 20 }}
           >
-            {/* <img src={} style={{ width: "100%", height: "100%" }} /> */}
+            <div
+              style={{
+                backgroundImage: `url(${Taare.src})`,
+              }}
+              id="customAnimatedBackground"
+            ></div>
           </div>
-        </div>
+        </motion.div>
+        <motion.div
+          animate={{
+            opacity: [1, 0, 1],
+          }}
+          transition={{ ease: "easeInOut", duration: 4, repeat: 20 }}
+        >
+          <div
+            style={{
+              position: "absolute",
+              width: "150%",
+              height: "150%",
+            }}
+          >
+            <div
+              style={{
+                backgroundImage: `url(${Taare2.src})`,
+              }}
+              id="customAnimatedBackground"
+            ></div>
+          </div>
+        </motion.div>
         {/* <ParticleArea /> */}
         <Header setIsNavOpen={setIsNavOpen} />
         {children}
