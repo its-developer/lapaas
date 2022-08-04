@@ -34,7 +34,7 @@ const DefaultLayout = ({ children }) => {
             opacity: 1,
           }}
           animate={{
-            opacity: [1, 0, 1],
+            opacity: [1, 1, 1],
           }}
           transition={{
             ease: "easeInOut",
