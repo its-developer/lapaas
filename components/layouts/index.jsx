@@ -30,12 +30,15 @@ const DefaultLayout = ({ children }) => {
         }}
       >
         <motion.div
+          initial={{
+            opacity: 1,
+          }}
           animate={{
-            opacity: [0, 1, 1, 0],
+            opacity: [1, 0, 1],
           }}
           transition={{
             ease: "easeInOut",
-            duration: 1,
+            duration: 2,
             repeatDelay: 2,
             repeat: 100,
           }}
@@ -56,12 +59,15 @@ const DefaultLayout = ({ children }) => {
           </div>
         </motion.div>
         <motion.div
+          initial={{
+            opacity: 0,
+          }}
           animate={{
-            opacity: [1, 0, 0, 1],
+            opacity: [0, 1, 0],
           }}
           transition={{
             ease: "easeInOut",
-            duration: 1,
+            duration: 2,
             repeatDelay: 2,
             repeat: 100,
           }}
@@ -76,6 +82,7 @@ const DefaultLayout = ({ children }) => {
             <div
               style={{
                 backgroundImage: `url(${Taare.src})`,
+                backgroundPosition: "10% 10%",
               }}
               id="customAnimatedBackground"
             ></div>
